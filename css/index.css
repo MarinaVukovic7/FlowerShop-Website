@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+        /*mobile----------------------------*/
+    /*@media screen and (max-width: 700px) */
+             /* main ----------------------------*/
+        main { overflow: hidden; }
+        article {
+            min-height: 700px;
+            width: 100%;
+        }
+        #art1 { display: block; }
+        #left-div1 {
+            background: url("../images/frau-mit-rosen-background.jpg") no-repeat center/cover;
+            width: 100%;
+            min-height: 500px;
+        }
+        #left-div1 img { display: none; }
+        #right-div1 {
+            padding: 10%;
+            text-align: center;
+            width: 100%;
+        }
+        #section1 {
+            min-height: 200px;
+            text-align: center;
+            padding-top: 8%;
+        }
+        #section1 a { 
+            text-decoration: none;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        #art2 { display: block; }
+        #art2 > div {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        #art2 > div > div {
+            height: 50%;
+            text-align: center;
+        }
+        #art2 > div img {
+            height: 50%;
+            width: 100%;
+        }
+        #img-section {
+            min-height: 800px;
+            background: url("../images/fixed-foto3.webp") center/cover fixed;
+        }
+        #art3 { 
+            display: block;
+            min-height: 200px;
+        }
+        #art3 div.flex-basis70 { 
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            min-height: 200px;
+            padding: 3%;
+        }
+        #art3 div.flex-basis70 > div { text-align: center;}
+        #art3 div.flex-basis30 { display: none; }
+        #art4 {
+            display: block;
+            padding: 3%;
+            min-height: 200px;
+        }
+        #art4 > div { text-align: center; }
+        #art4 a     { text-decoration: none; }
+        #art4 input {
+            padding: 10px;
+            border-radius: 3px;
+        }
+        #art4 input[type*="sub"] { cursor: pointer; }
+        /*tablet----------------------------*/
+    @media screen and (max-width: 1200px) and (min-width: 701px) {
+         /* main ----------------------------*/
+        #art1 { display: flex; }
+        #left-div1 {
+            background: url("../images/blatter3.webp") center/cover;
+            border: none;
+            position: relative;
+            width: 50vw;
+        }
+        #left-div1 img {
+            display: block;
+            position: absolute;
+            top: 7%;
+            right: -7%;
+            max-height: 600px;
+        }
+        #right-div1 {
+            padding: 10%;
+            text-align: center;
+            width: 50vw;
+        }
+        #section1 a { text-decoration: none; }
+        #art2 { display: block; }
+        #art3 { 
+            position: relative;
+            display: flex;
+            min-height: 500px;
+            margin: -3% 3% 3% 3%;
+        }
+        div.flex-basis70 { position: relative; }
+        div.flex-basis70 > div {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-75%);
+            width: 50%;
+            text-align: center;
+            margin: 3%;
+        }
+        #art3 div.flex-basis30 {
+            display: block;
+            position: absolute;
+            top: 15%;
+            left: 60%;
+            max-width: 200px;
+        }
+        #art4 { 
+            display: flex;
+            justify-content: space-around; }
+        }
+         /* desktop ------------------------*/
+    @media screen and (min-width: 1201px) {
+        /* main ----------------------------*/
+        #art1 { display: flex; }
+        #left-div1 {
+            background: url("../images/blatter3.webp") center/cover;
+            border: none;
+            position: relative;
+            width: 50vw;
+        }
+        #left-div1 img {
+            display: block;
+            position: absolute;
+            top: 7%;
+            right: -7%;
+            max-height: 600px;
+        }
+        #right-div1 {
+            padding: 10%;
+            text-align: center;
+            width: 50vw;
+        }
+        #section1 { padding-top: 2%; }
+        #art2 { display: flex; }
+        #art2 > div { 
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        #art2 > div img {
+            height: 100%;
+            transition: 0.5s;
+        }
+        #art2 > div img:hover { opacity: 0.7; }
+        #art3 { 
+            position: relative;
+            display: flex;
+            min-height: 500px;
+            margin: -3% 3% 3% 3%;
+        }
+        div.flex-basis70 { position: relative; }
+        div.flex-basis70 > div {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            margin: 3%;
+        }
+        div.flex-basis70 > div > h3 { transform: translateX(25%); }
+         #art3 div.flex-basis30 {
+            display: block;
+            position: absolute;
+            top: 7%;
+            left: 65%;
+            max-width: 250px;
+        }
+        #art4 {
+            display: flex;
+            justify-content: space-around;
+        }
+        }

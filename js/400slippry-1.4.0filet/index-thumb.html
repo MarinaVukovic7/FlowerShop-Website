@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Examples - Thumbnails</title>
+      <link href="forthumb/styles.css" rel="stylesheet" />
+      <style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		body {
+			font: 16px Verdana, Arial,sans-serif;
+		}
+		  
+		  section{
+			  max-width: 900px;
+			  margin: auto;
+		  }
+        .thumb-box .thumbs li {
+            width: 16.6666%;
+        }
+      </style>
+  </head>
+  <body>
+
+<section>
+  <h2 class="slider-title">Thumbnails</h2>
+  <p>Due to popular demand an example showing how to build a custom pager with thumbnails. Of course this is only one way of doing it :)</p>
+  <ul id="thumbnails">
+    <li><img src="img/image-1.jpg" alt="This <a href='#link'> links!</a>"></li>
+    <li><img src="img/image-2.jpg"  alt="This is caption 2"></li>
+    <li><img src="img/image-4.jpg" alt="And r slide 4."></li>
+    <li><img src="img/image-1.jpg" alt="And this for slide 4."></li>
+    <li><img src="img/image-2.jpg" alt="And this for slide 4."></li>
+    <li><img src="img/image-4.jpg" alt="And this for slide 4."></li>
+  </ul>
+  <div class="thumb-box">
+      <!-- für die Funktionierung ist data-slide sauber von 1-2-3-4-... zu zählen -->
+    <ul class="thumbs">
+      <li><a href="#" data-slide="1"><img src="img/image-1.jpg" alt="This "></a></li>
+      <li><a href="#" data-slide="2"><img src="img/image-2.jpg"  alt="This "></a></li>
+      <li><a href="#" data-slide="3"><img src="img/image-4.jpg" alt="And"></a></li>
+      <li><a href="#" data-slide="4"><img src="img/image-1.jpg" alt="And this "></a></li>
+      <li><a href="#" data-slide="5"><img src="img/image-2.jpg" alt="And this "></a></li>
+      <li><a href="#" data-slide="6"><img src="img/image-4.jpg" alt="And this "></a></li>
+    </ul>
+  </div>
+</section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="forthumb/scripts.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!--
+Quelle: slippry.com
+der normale Slider in dieser index.html - css/js im Ordner 'dist'
+thumbnail-Beispiel in index-thumb - css/js im Ordner 'forthumb' 
+-->
+	<head>
+		<title>slippry demo</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="dist/slippry.min.js"></script>
+		<meta name="viewport" content="width=device-width">
+    	<link rel="stylesheet" href="dist/slippry.css">
+    <!-- Quelle: slippry.com -->
+	</head>
+	<body>
+        <ul id="demo1">
+            <li>
+                <img src="../img/b3.jpg" alt="And this is some very long caption for slide 4.">
+            </li>
+            <li>
+                <img src="../img/bg-lesezeichen.gif" alt="And this is some very long caption for slide 4.">
+            </li>
+            <li>
+                <img src="../img/b10.jpg" alt="And this is some very long caption for slide 4.">
+            </li>
+            <li>
+                <img src="../img/favicon.png" alt="And this is some very long caption for slide 4.">
+            </li>
+            <li>
+                <img src="../img/b3.jpg" alt="And this is some very long caption for slide 4.">
+            </li>
+        </ul>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					transition: 'horizontal',/*'fade', 'horizontal', 'vertical', 'kenburns', false */
+					useCSS: true,
+					speed: 1000,
+					pause: 2000,
+					auto: false,
+					preload: 'visible',
+					autoHover: false,
+                    //captions:true,
+                    pager:true
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<!--
+Quelle: slippry.com
+der normale Slider in dieser index.html - css/js im Ordner 'dist'
+thumbnail-Beispiel in index-thumb - css/js im Ordner 'forthumb' 
+-->
+<head>
+<title>slippry demo</title>
+<meta name="viewport" content="width=device-width">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<script src="dist/slippry.min.js"></script>
+<link rel="stylesheet" href="dist/slippry.css">
+
+<!-- 
+Quelle: slippry.com 
+Beim slider 'news' müssen article bestehen bleiben!
+h2 oder h3, wie es benötigt wird
+Kontrolle der Ansicht besser in file-Ansicht. DW-Ansicht spinnt bei Änderungen gern!
+Ohne *-Selector Probleme mit margin und box-sizing
+-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div id="news-demo">
+    <article>
+        <div class="text-content">
+            <h3>Überschrift1</h3>
+            <p>Inhalt 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae mollitia aspernatur dolorum quam excepturi, earum et molestiae ab quibusdam reprehenderit.</p>
+            <a href="#!" class="button-link read-more">read more</a> </div>
+        <div class="image-content"><img src="img/image-1.jpg" alt="demo1_1"></div>
+    </article>
+    <article>
+        <div class="text-content">
+            <h3>Überschrift2</h3>
+            <p>Inhalt 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae mollitia aspernatur dolorum quam excepturi, earum et molestiae ab quibusdam reprehenderit.</p>
+            <a href="#!" class="button-link read-more">read more</a> </div>
+        <div class="image-content"><img src="img/image-2.jpg" alt="demo1_1"></div>
+    </article>
+    <article>
+        <div class="text-content">
+            <h3>Überschrift3</h3>
+            <p>Inhalt 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae mollitia aspernatur dolorum quam excepturi, earum et molestiae ab quibusdam reprehenderit.</p>
+            <a href="#!" class="button-link read-more">read more</a> </div>
+        <div class="image-content"><img src="img/image-4.jpg" alt="demo1_1"></div>
+    </article>
+</div>
+    
+<script>
+jQuery('#news-demo').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
+
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current 
+  captions: false,
+
+  // pager
+  pagerClass: 'news-pager',
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  speed: 1200,
+  pause: 8000,
+  auto: false,
+
+  // slideshow
+  autoDirection: 'prev'
+});
+</script>
+</body>
+</html>

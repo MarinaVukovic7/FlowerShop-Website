@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+        #galerie img { max-height: 700px; }
+        article {
+            min-height: 700px;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        article h1 { font-size: 2.5rem; }
+        article ul { list-style: none; }
+        ul h3 { margin: 2%; }
+        .sy-caption-wrap .sy-caption { text-align: center; }

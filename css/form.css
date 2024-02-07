@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+        article {
+            min-height: 700px;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        article p {
+            text-align: center;
+        }
+        form input, select {
+            padding: 5px;
+            display: block;
+            width: 100%;
+            height: 50px;
+            color: #3A5A40;
+        }
+        form textarea {
+            width: 100%;
+            height: 150px;
+        }
+        input[type*=sub] {
+            cursor: pointer;
+            text-align: center;
+        }
+        

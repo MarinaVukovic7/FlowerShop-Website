@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ligthbox 2</title>
+    <meta name="robots" content="noindex">
+
+    <link href="../../img/fav-sz2.svg" rel="icon" type="image/svg+xml" size="any">
+    <link href="../../img/favicon-fine.png" rel="icon" type="image/png">
+    <!-- css für Lightbox -->
+    <link href="../dist/css/lightbox.css" rel="stylesheet" /> 
+    <style>
+            /*
+            Das Prinzip :target ---
+            ist eine id als Ziel per internem Link gewählt, hat sie den Zustand :target
+            und css-Eigenschaften können vermittelt werden.
+
+            Eltern-Kind-Beziehungen spielen keine Rolle 
+            */
+            @font-face {
+            font-display: swap;
+            font-family: 'Open Sans';
+            src: url('../../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+            }
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+         html {
+            font: 1.2rem 'Open Sans', serif;
+            font-variantion-settings: 'wght' 480;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-variation-settings: 'wght' 720;
+        }
+        /* anpassungen lightbox----------*/
+        .galerie {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        .galerie img {
+            height: 120px;
+        }
+        .lightbox .lb-image {
+            border: 4px solid pink;
+        }
+        .lb-data .lb-details {
+            color: pink;
+        }
+        .lb-data .lb-number {
+            color: pink;
+        }
+    </style>
+</head>
+<body> 
+    <!--
+    <a href="gross.webP" data-lightbox="x"><img src="klein.jpg" alt=""></a>
+
+    data-lightbox - gleiche Bezeichner sind eine Gruppe (pflicht)
+    data-title - Bildüberschrift, in großer Darstellung (freiwillig)
+    data-alt - alt-Attribut für das große Bild (freiwillig)
+
+    css bereitstellen
+    (jQuery bereitstellen)
+    js bereitstellen
+    images - Ordner 
+    html-Code einfügen
+    Eigenschaften anpassen über Optionen (bzw. css-Einstellungen)
+    -->
+    <h1>Ligthbox 2</h1>
+    <h2>Einzelbilder</h2>
+    <a href="gal1/big/n1.jpg" data-lightbox="image-1" data-title="Meer"><img src="gal1/n1.jpg" alt="Meer"></a>
+    
+    <h2>Fotogalerie</h2>
+    <figure class="galerie">
+        <a href="gal1/big/n7.jpg" data-lightbox="set1" data-title="Mond"><img src="gal1/n7.jpg" alt="Mond"></a>
+        <a href="gal1/big/n2.jpg" data-lightbox="set1" data-title="Mond"><img src="gal1/n2.jpg" alt="Mond"></a>
+        <a href="gal1/big/n20.jpg" data-lightbox="set1" data-title="Mond"><img src="gal1/n20.jpg" alt="Mond"></a>
+        <a href="gal1/big/n8.jpg" data-lightbox="set1" data-title="Meer"><img src="gal1/n8.jpg" alt="Meer"></a>
+    </figure>
+    
+    <h2>Galerie mit je einem Vorschaubild</h2>
+    <figure class="galerie">
+        <div>
+            <a href="gal1/big/n2.jpg" data-lightbox="set2" data-title="Mond"><img src="gal1/n2.jpg" alt="Mond"></a>
+            <a href="gal1/big/n3.jpg" data-lightbox="set2" data-title="Mond"></a>
+            <a href="gal1/big/n4.jpg" data-lightbox="set2" data-title="Mond"></a>
+            <a href="gal1/big/n5.jpg" data-lightbox="set2" data-title="Mond"></a>
+        </div>
+        <div>
+            <a href="gal1/big/n6.jpg" data-lightbox="set3" data-title="Mond"><img src="gal1/n6.jpg" alt="Mond"></a>
+            <a href="gal1/big/n7.jpg" data-lightbox="set3" data-title="Mond"></a>
+            <a href="gal1/big/n8.jpg" data-lightbox="set3" data-title="Mond"></a>
+            <a href="gal1/big/n9.jpg" data-lightbox="set3" data-title="Mond"></a>
+        </div>
+    </figure>
+     <!-- js für Lightbox -->
+    <script src="../dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'albumLabel': "Photo %1 of %2"
+        })
+    </script>
+</body>
+</html>

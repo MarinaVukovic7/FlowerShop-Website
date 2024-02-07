@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Blütenzauber Projektformular – Füllen Sie das persönliche Projektformular aus!</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content=" Entdecken Sie unsere exklusiven Blumenarrangements. Nutzen Sie unser bequemes Anfrageformular für Blumenkreationen.">
+    <link href="images/MV.svg" rel="icon" type="image/svg+xml" size="any">
+    <link href="images/MV.png" rel="icon" type="image/png">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+    <header id="topheader" class="whitebg">
+        <nav id="leftnav" class="margleft3">
+            <ul>
+                <li><a href="webshop.html" class="darkgreen"><img src="images/online-shop.png" alt="Online-shop" title="Online-shop"></a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="darkgreen"><h1>Blütenzauer</h1></a>
+        <input type="checkbox" id="navchecker">
+        <label id="burger" for="navchecker"></label>
+        <label id="closenav" for="navchecker" title="Close navigation"></label>
+        <nav id="mainnav">
+            <ul>
+                <li><a href="index.html" class="darkgreen">Willkommen</a></li>
+                <li><a href="ueberuns.html" class="darkgreen">Über uns</a></li>
+                <li><a href="galerie.html" class="darkgreen">Galerie</a></li>
+                <li><a href="form.html" class="darkgreen">Abfrage</a></li>
+                <li><a href="kontakt.html" class="darkgreen">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="ani-div" class="darkgreenbg">
+        <p><a href="webshop.html" class="beige">Entdecken Sie unser Angebot zum Valentinstag!</a></p>
+    </div>
+    <main class="darkgreenbg beige">
+        <article class="padd3">
+            <p>Herzlichen Dank für Ihr Interesse an Blütenzauber! Um Ihnen bestmöglich zu helfen, kreieren wir individuelle Blumenarrangements nach Ihren Wünschen. Bitte nutzen Sie unser Abfrageformular, um uns mehr über Ihre Vorstellungen mitzuteilen.</p>
+            <form class="padd3" method="post" action="formular.php">
+                    <div class="flex-container margbottom2">
+                        <input class="flex-basis50 beigebg" type="text" name="name" placeholder="Name">
+                        <input class="flex-basis50 beigebg" type="text" name="vorname" placeholder="Vorname">
+                    </div>
+                    <div class="flex-container margbottom2">
+                        <input class="flex-basis50 beigebg" type="email" placeholder="E-Mail">
+                        <input class="flex-basis50 beigebg" type="tel" placeholder="Tel">
+                    </div>
+                    <input class="margbottom2 beigebg" type="date" name="date">
+                    <input class="margbottom2 beigebg" type="text" name="standort" placeholder="Standort der Veranstaltung">
+                    <select class="margbottom2 beigebg" name="projekttype">
+                        <option>Dienstleistung Auswahl</option>
+                        <option value="hochzeit">Hochzeits- oder Eventdekoration</option>
+                        <option value="strauß">Blumenstrauß</option>
+                        <option value="trauerkranz">Trauerkränze</option>
+                        <option value="geschenk">Geschenkideen</option>
+                        <option value="andere">Andere</option>
+                    </select>
+                    <input class="margbottom2 beigebg" type="number" name="budget" placeholder="Budget">
+                    <textarea class="margbottom2 beigebg" placeholder="Beschreiben Sie kurz Ihre Ideen"></textarea> 
+                <input class="darkgreen hellgreenbg" type="submit" value="Senden">
+            </form>
+        </article>
+        <div id="back-top">
+            <a href="#">&uarr;</a>
+        </div>
+    </main>
+    <footer class="whitebg">
+        <div id="footer-left">
+            <a href="datenschutz.html" class="darkgreen" >Datenschutz</a>
+            <a href="impressum.html" class="darkgreen">Impressum</a>
+        </div>
+        <div id="footer-middle">
+            <p>&copy; Marina Vukovic</p>
+        </div>
+        <div id="footer-right">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Social media - Facebook"></a> 
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.webp" alt="Social media - Instagram"></a> 
+            <a href="https://www.pinterest.de/" target="_blank"><img src="images/pinterest.png" alt="Social media - Pinterest"></a> 
+        </div>
+    </footer>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+    article {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    h1, h2, h3, h4 {  padding: 2% 3%; }
+    h2, h3 { font: 1.5rem Roboto; }
+    main p { padding: 0 3%; }
+    main p:last-of-type { padding-bottom: 2%; }
+    a {
+        text-decoration: none;
+        white-space: wrap;
+    }
+    a:hover { text-decoration: underline; }

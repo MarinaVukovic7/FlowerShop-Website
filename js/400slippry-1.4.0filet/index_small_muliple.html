@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--
+Quelle: slippry.com
+der normale Slider in dieser index.html - css/js im Ordner 'dist'
+thumbnail-Beispiel in index-thumb - css/js im Ordner 'forthumb' 
+-->
+	<head>
+		<title>slippry demo</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="dist/slippry.min.js"></script>
+		<meta name="viewport" content="width=device-width">
+    	<link rel="stylesheet" href="dist/slippry.css">
+    <!-- Quelle: slippry.com -->
+        <style>
+            .mobile{display: none;}
+            .sy-controls li a::after {
+                background-color: transparent;
+            }
+            .sy-controls li a::after {
+                display: block;
+            }
+            .sy-controls li a:link, .sy-controls li a:visited {
+                opacity: 1;
+            }
+            .sy-slides-wrap .sy-controls {
+                display: block; 
+            }
+        </style>
+	</head>
+	<body>
+        <ul id="slider_desk" class="desk">
+            <li>
+                <img src="img/image-1.jpg" alt="Bild1">
+            </li>
+            <li>
+                <img src="img/image-2.jpg"  alt="This is caption 2">
+            </li>
+            <li>
+                <img src="img/image-4.jpg" alt="And this is some very long caption for slide 4.">
+            </li>
+        </ul>
+        <ul id="slider_mobile" class="mobile">
+            <li>
+                <img src="img/image-1.jpg" alt="Bild1">
+            </li>
+            <li>
+                <img src="img/image-2.jpg"  alt="This is caption 2">
+            </li>
+            <li>
+                <img src="img/image-4.jpg" alt="And this is some very long caption for slide 4.">
+            </li>
+        </ul>
+<h2>Hallo </h2>
+        <ul id="slider_desk2" class="desk">
+            <li>
+                <img src="img/image-1.jpg" alt="Bild1">
+            </li>
+            <li>
+                <img src="img/image-2.jpg"  alt="This is caption 2">
+            </li>
+            <li>
+                <img src="img/image-4.jpg" alt="And this is some very long caption for slide 4.">
+            </li>
+        </ul>
+
+		<script>
+			$(function() {
+                if($(window).width() > 700){
+                    var sliderdesk = $("#slider_desk").slippry({
+                    });
+                    var sliderdesk2 = $("#slider_desk2").slippry({
+                    });
+                }
+                else {
+                    var slidermobile = $("#slider_mobile").slippry({
+                    });
+                    var slidermobile2 = $("#slider_mobile2").slippry({
+                    });
+                }
+			});
+		</script>
+	</body>
+</html>

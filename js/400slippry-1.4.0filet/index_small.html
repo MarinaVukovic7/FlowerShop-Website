@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!--
+Quelle: slippry.com
+der normale Slider in dieser index.html - css/js im Ordner 'dist'
+thumbnail-Beispiel in index-thumb - css/js im Ordner 'forthumb' 
+-->
+	<head>
+		<title>slippry demo</title>
+		<meta name="viewport" content="width=device-width">
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="dist/slippry.min.js"></script>
+    	<link rel="stylesheet" href="dist/slippry.css">
+
+        <!-- Quelle: slippry.com -->
+		
+<!-- 
+1. im html ul mit img aufbauen. ID nicht vergessen!
+2. js und css-Dateien in Projektordner kopieren.
+3. js und css-Dateien im head der Datei einbinden.
+4. Startsequenz (script-Block vor schließendem body-Tag) einbauen.
+5. Pfeile (Ordner images) in Projektordner kopieren.
+-->
+
+	</head>
+	<body>
+        <ul id="slider1">
+            <li>
+                <img src="img/image-1.jpg" alt="Bild1">
+            </li>
+            <li>
+                <img src="img/image-2.jpg"  alt="This is caption 2">
+            </li>
+            <li>
+                <img src="img/image-4.jpg" alt="caption for slide 4.">
+            </li>
+        </ul>
+        
+		<script>
+			$("#slider1").slippry();
+		</script>
+	</body>
+</html>

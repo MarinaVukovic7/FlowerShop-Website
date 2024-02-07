@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-display: swap;
+    font-family:  AlexBrush;
+    src: url("../fonts/AlexBrush-Regular.ttf") format('truetype');
+    }
+    main {
+        min-height: 925px;
+        background: url("../images/webshop.webp") center/cover fixed;
+    }
+    p {
+        font-family: AlexBrush;
+        font-size: 4rem;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .darkgreen { color: #006C3B; }
+    .translate50 { transform: translateX(-50%);}
+    .fixed { 
+        position: fixed;
+        top: 10%;
+        left: 50%;
+    }
